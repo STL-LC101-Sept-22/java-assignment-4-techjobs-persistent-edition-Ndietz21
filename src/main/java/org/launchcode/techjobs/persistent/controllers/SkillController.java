@@ -38,7 +38,9 @@ public class SkillController {
         if (errors.hasErrors()) {
             return "skills/add";
         }
+
         skillRepository.save(newSkill);
+
         return "redirect:";
     }
 

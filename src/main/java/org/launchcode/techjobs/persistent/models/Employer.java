@@ -23,10 +23,12 @@ public class Employer extends AbstractEntity {
     private List<Job> jobs = new ArrayList<>();
 
     public String getLocation() {
+
         return location;
     }
 
     public void setLocation(String location) {
+
         this.location = location;
     }
 
@@ -34,7 +36,4 @@ public class Employer extends AbstractEntity {
 
     }
 
-    public List<Job> getJobs() {
-        return jobs;
-    }
 }
