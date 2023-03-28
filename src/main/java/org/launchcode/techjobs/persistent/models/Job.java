@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Entity
 public class Job extends AbstractEntity{
 
@@ -21,16 +22,14 @@ public class Job extends AbstractEntity{
         this.skills = skills;
     }
 
+// Getters and setters.
 
-    // Getters and setters.
 
     public Employer getEmployer() {
-
         return employer;
     }
 
     public void setEmployer(Employer employer) {
-
         this.employer = employer;
     }
 

@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.persistent.models;
 
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
@@ -17,8 +18,10 @@ public abstract class AbstractEntity {
 
     @NotBlank
     @NotNull
-    @Size(max=100, message="Name must be less than 100 characters")
+    @Size(min = 1, max=100)
     private String name;
+
+
 
     public int getId() {
 
